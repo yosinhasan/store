@@ -1,0 +1,77 @@
+<!--top-header-->
+<div class="top-header">
+	<div class="container">
+		<div class="top-header-main">
+			<div class="col-md-9 top-header-left">
+				<div class="drop">
+					<div class="signin">
+						<tag:usertag />
+					</div>
+				</div>
+
+			</div>
+			<div class="col-md-3 top-header-left">
+				<div class="box1">
+					<tag:langtag />
+				</div>
+				<div class="cart box_1">
+					<a
+						href="<%=getServletConfig().getServletContext().getContextPath()%>/basket.html">
+						<div class="total">
+							<span class="simpleCart_total"></span>
+						</div> <img src="assets/images/cart-1.png" alt="" />
+					</a>
+					<p>
+						<a href="#" class="simpleCart_empty"><fmt:message
+								key="emptyCart" /></a>
+					</p>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+
+</div>
+<!--top-header-->
+
+<!--start-logo-->
+<div class="logo">
+	<a href="<%=getServletConfig().getServletContext().getContextPath()%>/"><h1>
+			<fmt:message key="store"></fmt:message>
+		</h1></a>
+</div>
+<!--start-logo-->
+<!--bottom-header-->
+<div class="header-bottom">
+	<div class="container">
+		<div class="header">
+			<div class="col-md-9 header-left">
+				<div class="top-nav">
+					<ul class="memenu skyblue">
+						<li class="active"><a
+							href="<%=getServletConfig().getServletContext().getContextPath()%>/index.html"><fmt:message
+									key="home" /></a></li>
+						<li class="grid"><a
+							href="<%=getServletConfig().getServletContext().getContextPath()%>/products.html"><fmt:message
+									key="products" /></a></li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="col-md-3 header-right">
+				<div class="search-bar">
+					<form
+						action="<%=getServletConfig().getServletContext().getContextPath()%>/search.html"
+						method="get">
+						<input name="search" type="text"
+							placeholder="<fmt:message key="search" />"> <input
+							type="submit" value="">
+					</form>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!--bottom-header-->

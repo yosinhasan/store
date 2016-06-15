@@ -1,0 +1,18 @@
+<%--=========================================================================== 
+JSTL tag library.
+===========================================================================--%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
+
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+
+<%@ taglib prefix="tag" tagdir="/WEB-INF/tags/"%>
+
+<%--=========================================================================== 
+Custom tag library.
+===========================================================================
+--%>
+<%@taglib prefix="my" uri="/WEB-INF/tlds/captcha-tag.tld"%>
+
+<%@taglib prefix="p" uri="/WEB-INF/tlds/pagination-tag.tld"%>

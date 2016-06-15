@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<store:security xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:store="http://com.epam.pp.hasan.Store" xsi:schemaLocation="http://com.epam.pp.hasan.Store security.xsd">
+	<constraint>
+		<url-pattern>logout.html</url-pattern>
+		<role>user</role>
+		<role>admin</role>
+	</constraint>
+	<constraint>
+		<url-pattern>order.html</url-pattern>
+		<role>admin</role>
+		<role>user</role>
+	</constraint>
+</store:security>

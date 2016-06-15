@@ -1,0 +1,64 @@
+<div class="col-md-3 prdt-right">
+    <div class="w_sidebar">
+        <form class="ajaxHandler">
+            <section name="categories" class="sky-form">
+                <h4>Catogories</h4>
+                <div class="row1 scroll-pane">
+                    <div class="col col-4">
+                        <label class="checkbox"><input type="checkbox"
+                                                       checked=""><i></i>All Accessories</label>
+                    </div>
+                    <div class="col col-4">
+                        <c:forEach var="item" items="${requestScope['categories']}">
+                            <label class="checkbox"><input type="checkbox"
+                                                           name="catIds"
+                                                           value="${item.getId()}"><i></i>${item.getName()}
+                            </label>
+                        </c:forEach>
+                    </div>
+                </div>
+            </section>
+            <section name="brands" class="sky-form">
+                <h4>Brand</h4>
+                <div class="row1 row2 scroll-pane">
+                    <div class="col col-4">
+                        <c:forEach var="item" items="${requestScope['brands']}">
+                            <label class="checkbox"><input type="checkbox"
+                                                           name="brandIds"
+                                                           value="${item.getId()}"><i></i>${item.getName()}
+                            </label>
+                        </c:forEach>
+                    </div>
+                </div>
+            </section>
+            <section class="sky-form">
+                <h4>Colour</h4>
+                <div class="row1 row2 scroll-pane">
+                    <div class="col col-4">
+                        <c:forEach var="item" items="${requestScope['colors']}">
+                            <label class="checkbox"><input type="checkbox"
+                                                           name="colorIds"
+                                                           value="${item.getId()}"><i></i>${item.getName()}
+                            </label>
+                        </c:forEach>
+                    </div>
+                </div>
+            </section>
+            <section name="discount" class="sky-form">
+                <h4>discount</h4>
+                <div class="row1 row2 scroll-pane">
+                    <div class="col col-4">
+                        <label class="radio"><input type="radio" name="discountId"><i></i>none</label>
+                        <c:forEach var="item" items="${requestScope['discounts']}">
+                            <label class="radio"><input type="radio" name="discountId"
+                                                        value="${item.getId()}"><i></i>${item.getDiscount()} %
+                                and
+                                above</label>
+                        </c:forEach>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </div>
+</div>
+<div class="clearfix"></div>

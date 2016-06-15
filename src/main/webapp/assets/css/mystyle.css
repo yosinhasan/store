@@ -1,0 +1,76 @@
+.signin {
+	position: relative;
+	width: 100%;
+	/*width: 60%;*/
+}
+
+.signin img {
+	width: 45px;
+	height: 45px;
+}
+
+.signin a {
+	color: rgba(255, 255, 255, 0.6);
+	text-decoration: none;
+}
+
+.avatarDropdown {
+	background: black;
+	position: absolute;
+	width: 20%;
+}
+
+.avatarDropdown li {
+	display: block;
+	text-align: left;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+	padding: 5%;
+}
+
+.avatarDropdown button {
+	border: none !important;
+	background-color: #000 !important;
+}
+
+.avatarDropdown li:last-child {
+	border-bottom: none;
+}
+
+.avatarDropdown li:hover {
+	cursor: pointer;
+	background: rgba(2, 2, 2, 0.4);
+	color: #000;
+}
+
+.displayNone {
+	display: none;
+}
+
+.settings {
+	margin-bottom: 3% !important;
+}
+
+.basketTable  tr th, tr td {
+	text-align: center;
+	width: 20% !important;
+	vertical-align: middle !important;
+}
+
+.black {
+	background: #000 !important;
+}
+
+.dropBtn {
+	color: #fff !important;
+	background: #000 !important;
+	border: none !important;
+}
+
+.drpDropdown {
+	top: auto !important;
+	height: auto !important;
+}
+
+.drpDropdown a {
+	color: #fff !important;
+}
